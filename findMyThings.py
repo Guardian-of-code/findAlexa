@@ -70,7 +70,7 @@ def update_table(event):
     lostItem = event['request']['intent']['slots']['item']['value']
     foundPlace = event['request']['intent']['slots']['place']['value']
     Items_List.append(lostItem)
-    Probable_Place_List[lostItem]=str("Try checking near the "+foundPlace)
+    Probable_Place_List[lostItem]=str("Your "+lostItem+" is most probably near the "+foundPlace)
     
 
     
